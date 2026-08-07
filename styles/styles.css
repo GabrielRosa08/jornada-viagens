@@ -1,3 +1,20 @@
+/* BACKGROUND
+BUTTONS
+TEXT COLORS */
+
+:root {
+  --backgorund-primary-color: #ffffff;
+  --backgorund-secondary-color: #f5f5f5;
+  --background-tertiary-color: #000000;
+
+  --button-primary-color: #8f0101;
+  --button-secondary-color: #b81515;
+
+  --text-primary-color: #222222;
+  --text-secondary-color: #ffffff;
+}
+
+/* RESET CSS */
 * {
   margin: 0;
   padding: 0;
