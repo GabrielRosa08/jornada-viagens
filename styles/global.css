@@ -54,11 +54,35 @@ body {
   margin: 16px auto 32px;
 }
 
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 280px;
+  height: 64px;
+
+  color: var(--text-secondary-color);
+  font-size: 20px;
+  font-weight: var(--title-weight);
+  text-decoration: none;
+
+  background-color: var(--button-secondary-color);
+  padding: 16px 64px;
+  border-radius: 16px;
+}
+
 @media screen and (min-width: 768px) {
   .section-title {
     width: 100%;
   }
   .section-title h2 {
     font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .button:hover {
+    background-color: var(--button-primary-color);
   }
 }
