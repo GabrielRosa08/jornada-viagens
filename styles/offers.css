@@ -5,7 +5,7 @@
   gap: 24px;
 }
 
-.card {
+.offers-card .card {
   color: var(--text-secondary-color);
   background-color: black;
   padding: 24px 16px;
@@ -21,7 +21,7 @@
   text-align: center;
 }
 
-.card header {
+.offers-card .card header {
   background-color: transparent;
   display: block;
   position: static;
@@ -29,40 +29,48 @@
   margin-bottom: 24px;
 }
 
-.card header p {
+.offers-card .card header p {
   font-size: 20px;
   font-weight: var(--text-weight);
 }
 
-.card header h3 {
+.offers-card .card header h3 {
   font-size: 40px;
   font-weight: var(--title-weight);
   margin: 8px 0 0;
 }
 
-.card header span {
+.offers-card .card header span {
   font-size: 32px;
   display: inline-block;
   margin-top: 24px;
 }
 
 .japan {
-  background: url(../img/card-japan.jpg) no-repeat;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/card-japan.jpg) no-repeat;
   background-size: cover;
 }
 
 .san-andreas {
-  background: url(../img/card-sanandreas.jpg) no-repeat;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/card-sanandreas.jpg) no-repeat;
   background-size: cover;
 }
 
 .paraiba {
-  background: url(../img/card-paraiba.jpg) no-repeat;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/card-paraiba.jpg) no-repeat;
   background-size: cover;
 }
 
 .manaus {
-  background: url(../img/card-manaus.jpg) no-repeat;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/card-manaus.jpg) no-repeat;
   background-size: cover;
 }
 
@@ -75,22 +83,22 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .card {
-    width: 420px;
+  .offers-card .card {
+    width: 450px;
     height: 308px;
   }
 
-  .card header h3 {
+  .offers-card .card header h3 {
     font-size: 48px;
   }
 
-  .card header span {
+  .offers-card .card header span {
     font-size: 40px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .card {
+  .offers-card .card {
     width: 588px;
   }
 }
