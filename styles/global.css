@@ -54,6 +54,10 @@ body {
   margin: 16px auto 32px;
 }
 
+.space {
+  margin-top: 88px;
+}
+
 .button {
   display: flex;
   align-items: center;
