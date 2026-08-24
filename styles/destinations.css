@@ -1,10 +1,4 @@
-.destination-items {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 24px;
-}
-
+.destination-items,
 .destination-items .items {
   display: flex;
   flex-direction: column;
@@ -34,15 +28,100 @@
 .img-item {
   width: 312px;
   height: 360px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .img-item.tokyo {
-  background: url(../img/tokyo-mobile.jpg) no-repeat;
-  background-size: cover;
+  background-image: url(../img/tokyo-mobile.jpg);
 }
 
 .img-item.osaka {
+  background-image: url(../img/osaka-mobile.jpg);
   margin-top: 40px;
-  background: url(../img/osaka-mobile.jpg) no-repeat;
-  background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .img-item {
+    width: 648px;
+    height: 452px;
+  }
+
+  .img-item.tokyo {
+    background-image: url(../img/tokyo-tablet-desk.jpg);
+  }
+
+  .img-item.osaka {
+    background-image: url(../img/osaka-tablet-desk.jpg);
+  }
+
+  .destination-items .items p {
+    margin: 0 60px;
+  }
+
+  .destination-items .items footer {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    padding-left: 60px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .destination-items {
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch; /* antes: flex-start */
+    gap: 24px;
+  }
+
+  .destination-items .items {
+    flex-direction: column;
+    align-items: center;
+    width: 460px;
+  }
+
+  .img-item {
+    width: 460px;
+    height: 320px;
+  }
+
+  .img-item.osaka {
+    margin-top: 0;
+  }
+
+  .destination-items .items p {
+    margin: 0 24px;
+  }
+
+  .destination-items .items footer {
+    padding-left: 0;
+    justify-content: start;
+    margin-top: auto; /* nova linha — cola o botão no final do card */
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1440px) {
+    .destination-items .items {
+      width: 560px;
+    }
+
+    .img-item {
+      width: 560px;
+      height: 390px;
+    }
+  }
+
+  @media screen and (min-width: 1920px) {
+    .destination-items .items {
+      width: 680px;
+    }
+
+    .img-item {
+      width: 680px;
+      height: 474px;
+    }
+  }
 }
