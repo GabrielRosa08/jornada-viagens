@@ -1,0 +1,37 @@
+.payments h3 {
+  font-size: 28px;
+  font-weight: var(--title-weight);
+}
+
+.payments p {
+  font-size: 20px;
+  font-weight: var(--text-weght);
+  margin-top: 24px;
+}
+
+.payments .img-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  height: 480px;
+  margin-top: 24px;
+}
+
+.payments .img-gallery .img.bag {
+  background: url(/img/bag-mobile.png) no-repeat;
+  background-size: cover;
+}
+
+.payments .img-gallery .img.passport {
+  background: url(/img/passport-mobile.png) no-repeat;
+  background-size: cover;
+}
+
+.payments .img-gallery .img.people {
+  background: url(/img/people-mobile.png) no-repeat;
+  background-size: cover;
+}
+
+.payments .img-gallery .img.people.colspan-2 {
+  grid-column: span 2;
+}
