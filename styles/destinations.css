@@ -103,25 +103,23 @@
 }
 
 @media screen and (min-width: 1440px) {
-  @media screen and (min-width: 1440px) {
-    .destination-items .items {
-      width: 560px;
-    }
-
-    .img-item {
-      width: 560px;
-      height: 390px;
-    }
+  .destination-items .items {
+    width: 560px;
   }
 
-  @media screen and (min-width: 1920px) {
-    .destination-items .items {
-      width: 680px;
-    }
+  .img-item {
+    width: 560px;
+    height: 390px;
+  }
+}
 
-    .img-item {
-      width: 680px;
-      height: 474px;
-    }
+@media screen and (min-width: 1920px) {
+  .destination-items .items {
+    width: 680px;
+  }
+
+  .img-item {
+    width: 680px;
+    height: 474px;
   }
 }
