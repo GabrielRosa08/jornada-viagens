@@ -54,3 +54,30 @@
   line-height: 1;
   color: var(--star-primary-color);
 }
+
+@media screen and (min-width: 1024px) {
+  .testimonials-container {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0 40px;
+    gap: 40px;
+  }
+
+  .testimonials-container article {
+    flex: 1;
+    max-width: 340px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .testimonials-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 64px;
+  }
+
+  .testimonials-container article {
+    max-width: 380px;
+  }
+}
