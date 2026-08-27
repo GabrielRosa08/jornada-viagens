@@ -42,7 +42,7 @@
   align-self: end;
 }
 
-.testimonials-container h4 {
+.testimonials-container h3 {
   font-size: 20px;
   font-weight: var(--title-weight);
 }

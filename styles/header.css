@@ -8,6 +8,10 @@ header {
   position: relative;
 }
 
+header a:focus-visible {
+  outline-color: var(--text-secondary-color);
+}
+
 .logo {
   display: inline-block;
   width: 68px;
@@ -24,6 +28,13 @@ header {
 
 .navigation-menu {
   margin-top: 24px;
+}
+
+input:focus-visible + label {
+  display: inline-block;
+  outline: 3px solid var(--text-secondary-color);
+  outline-offset: 4px;
+  border-radius: 4px;
 }
 
 input[type="checkbox"]:checked ~ nav {
