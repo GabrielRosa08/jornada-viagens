@@ -4,22 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta property="og:title" content="Jornada Viagens" />
+    <meta property="og:description" content="Jornada Viagens is a travel agency dedicated to creating unforgettable trips." />
+    <meta property="og:image" content="https://gabrielrosa08.github.io/jornada-viagens/img/logo-jornada-footer.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://gabrielrosa08.github.io/jornada-viagens" />
+
+    <link rel="icon" href="img/">
     <link rel="stylesheet" href="styles/styles.css">
 
-    <title>Jornada viagens</title>
+    <title>Jornada Viagens</title>
+    <meta name="description" content="Jornada Viagens is a travel agency dedicated to creating unforgettable trips. Explore weekly offers, popular destinations like Tokyo and Osaka, flexible payment terms, and read what our customers have to say.">
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
     <header>
         <a class="logo" href="index.html" title="Return to the home page">
             <img class="img-mobile" src="/img/white-compass-logo.png" alt="White compass in the Jornada Viagens logo">
             <img class="img-desktop" src="/img/compass-text-journey-white.png" alt="White compass in the Jornada Viagens logo with text">
         </a>
         <div class="navigation-menu">
+            <input type="checkbox" id="menu" class="visually-hidden" aria-label="Toggle navigation menu">
             <label for="menu">
-                <img src="img/menu.png" alt="menu">
+                <img src="/img/menu.png" alt="Menu">
             </label>
-            <input type="checkbox" id="menu" hidden >
-            <nav>
+            <nav aria-label="Main navigation">
                 <ul class="list-links">
                     <li>
                         <a href="blog.html" target="_blank" title="Access the blog">Blog</a>
@@ -36,15 +46,15 @@
             </nav>
         </div>
     </header>
-    <main>
-        <section class="hero">
+    <main id="main-content">
+        <section class="hero" aria-labelledby="hero-heading">
             <div class="hero-img"></div>
-            <h2>We are an agency passionate about creating unforgettable trips. From the destination to the choice of activities, we take care of every detail so you can make the most of every moment of your journey!</h2>
+            <h1 id="hero-heading">We are an agency passionate about creating unforgettable trips. From the destination to the choice of activities, we take care of every detail so you can make the most of every moment of your journey!</h1>
         </section>
-        <section class="offers">
+        <section class="offers" aria-labelledby="offers-heading">
             <div class="section-title">
-                <h2>Offers of the week</h2>
-                <hr>
+                <h2 id="offers-heading">Offers of the week</h2>
+                <hr aria-hidden="true">
             </div>
             <div class="offers-card">
                 <article class="card japan">
@@ -56,7 +66,7 @@
                         </h3>
                     </header>
                     <footer>
-                        <a href="#" class="button">Ver detalhes</a>
+                        <a href="#" class="button">View details</a>
                     </footer>
                 </article>
                 <article class="card san-andreas">
@@ -68,7 +78,7 @@
                         </h3>
                     </header>
                     <footer>
-                        <a href="#" class="button">Ver detalhes</a>
+                        <a href="#" class="button">View details</a>
                     </footer>
                 </article>
                 <article class="card paraiba">
@@ -80,7 +90,7 @@
                         </h3>
                     </header>
                     <footer>
-                        <a href="#" class="button">Ver detalhes</a>
+                        <a href="#" class="button">View details</a>
                     </footer>
                 </article>
                 <article class="card manaus">
@@ -92,15 +102,15 @@
                         </h3>
                     </header>
                     <footer>
-                        <a href="#" class="button">Ver detalhes</a>
+                        <a href="#" class="button">View details</a>
                     </footer>
                 </article>
             </div>
         </section>
-        <section class="categories">
+        <section class="categories" aria-labelledby="categories-heading">
             <div class="section-title space">
-                <h2>Search by category</h2>
-                <hr>
+                <h2 id="categories-heading">Search by category</h2>
+                <hr aria-hidden="true">
             </div>
             <div class="categories-cards">
                 <a 
@@ -110,7 +120,7 @@
                     title="search for the domestic packages category">
                         <img
                             src="/img/icon-domestic-package.png" 
-                            alt="gray icon of a person traveling">
+                            alt="Suitcase icon">
                         <h3>
                             Domestic package
                         </h3>
@@ -122,7 +132,7 @@
                     title="search for the international packages category">
                         <img
                             src="/img/icon-international-packages.png" 
-                            alt="gray airplane icon">
+                            alt="Airplane icon">
                         <h3>
                             International Packages
                         </h3>
@@ -134,7 +144,7 @@
                     title="search for the transfer category">
                         <img
                             src="/img/icon-transfer.png" 
-                            alt="gray car icon">
+                            alt="Car icon">
                         <h3>
                             Transfer
                         </h3>
@@ -146,25 +156,25 @@
                     title="search for the travel insurance category.">
                         <img
                             src="/img/icon-travel-insurance.png" 
-                            alt="gray icon of planet Earth with a padlock in the top right corner">
+                            alt="Globe with padlock icon">
                         <h3>
                             Insurance Travel
                         </h3>
                 </a>
             </div>
         </section>
-        <section class="destinations">
+        <section class="destinations" aria-labelledby="destinations-heading">
             <div class="section-title space">
-                <h2>Popular Destinations</h2>
-                <hr>
+                <h2 id="destinations-heading">Popular Destinations</h2>
+                <hr aria-hidden="true">
             </div>
             <div class="destination-items">
                 <article class="items">
                     <header>
                         <div class="img-item tokyo"></div>
-                        <h4>Tokyo</h4>
+                        <h3>Tokyo</h3>
                     </header>
-                    <p>Tokyo is a vibrant and cosmopolitan city, with its historic temples, modern art museums, and iconic skyscrapers. Don't miss the chance to immerse yourself in its fascinating atmosphere..</p>
+                    <p>Tokyo is a vibrant and cosmopolitan city, with its historic temples, modern art museums, and iconic skyscrapers. Don't miss the chance to immerse yourself in its fascinating atmosphere.</p>
                     <footer>
                         <a href="#" class="button">View details</a>
                     </footer>
@@ -172,19 +182,19 @@
                 <article class="items">
                     <header>
                         <div class="img-item osaka"></div>
-                        <h4>Osaka</h4>
+                        <h3>Osaka</h3>
                     </header>
-                    <p>Osaka is a bustling, modern city in Japan. It is famous for its delicious cuisine and for being an excellent starting point for exploring other nearby Japanese cities..</p>
+                    <p>Osaka is a bustling, modern city in Japan. It is famous for its delicious cuisine and for being an excellent starting point for exploring other nearby Japanese cities.</p>
                     <footer>
                         <a href="#" class="button">View details</a>
                     </footer>
                 </article>
             </div>
         </section>
-        <section class="payments">
+        <section class="payments" aria-labelledby="payments-heading">
             <div class="section-title space">
-                <h2>Payment Terms</h2>
-                <hr>
+                <h2 id="payments-heading">Payment Terms</h2>
+                <hr aria-hidden="true">
             </div>
             <div class="text-content">
                 <h3>Pay in up to 12 installments!</h3>
@@ -196,10 +206,10 @@
                 <div class="img people colspan-2"></div>
             </div>
         </section>
-        <section class="testimonials">
+        <section class="testimonials" aria-labelledby="testimonials-heading">
             <div class="section-title space">
-                <h2>Testimonials</h2>
-                <hr>
+                <h2 id="testimonials-heading">Testimonials</h2>
+                <hr aria-hidden="true">
             </div>
             <div class="testimonials-container">
                 <article>
@@ -207,16 +217,16 @@
                         <p>A Jornada was one of the best travel agencies I have ever used. The customer service was exceptional, and the entire team was very attentive and helpful.</p>
                     </header>
                     <footer>
-                        <img src="/img/first-avatar.png" alt="">
+                        <img src="/img/first-avatar.png" alt="Photo of Talita Villas Boas">
                         <div class="profile-content">
-                            <h4>Talita Villas Boas</h4>
+                            <h3>Talita Villas Boas</h3>
                         </div>
-                        <div class="rating">
-                            <span class="star">★</span>
-                            <span class="star">★</span>
-                            <span class="star">★</span>
-                            <span class="star">★</span>
-                            <span class="star">★</span>
+                        <div class="rating" role="img" aria-label="5 out of 5 stars">
+                            <span class="star" aria-hidden="true">★</span>
+                            <span class="star" aria-hidden="true">★</span>
+                            <span class="star" aria-hidden="true">★</span>
+                            <span class="star" aria-hidden="true">★</span>
+                            <span class="star" aria-hidden="true">★</span>
                         </div>
                     </footer>
                 </article>
@@ -225,62 +235,62 @@
                         <p>I highly recommend the Jornada Viagens agency. They offer personalized, high-quality service that exceeded my expectations on my last trip.</p>
                     </header>
                     <footer>
-                        <img src="/img/second-avatar.png" alt="">
+                        <img src="/img/second-avatar.png" alt="Photo of Amari Salin">
                         <div class="profile-content">
-                            <h4>Amari Salin</h4>
+                            <h3>Amari Salin</h3>
                         </div>
-                        <div class="rating">
-                            <span class="star">★</span>
-                            <span class="star">★</span>
-                            <span class="star">★</span>
-                            <span class="star">★</span>
-                            <span class="star">★</span>
+                        <div class="rating" role="img" aria-label="5 out of 5 stars">
+                            <span class="star" aria-hidden="true">★</span>
+                            <span class="star" aria-hidden="true">★</span>
+                            <span class="star" aria-hidden="true">★</span>
+                            <span class="star" aria-hidden="true">★</span>
+                            <span class="star" aria-hidden="true">★</span>
                         </div>
                     </footer>
                 </article>
                 <article>
                     <header>
-                        <p>My trip with Jornada was incredible! I highly recommend the agency to anyone looking for an exciting and personalized experience..</p>
+                        <p>My trip with Jornada was incredible! I highly recommend the agency to anyone looking for an exciting and personalized experience.</p>
                     </header>
                     <footer>
-                        <img src="/img/third-avatar.png" alt="">
+                        <img src="/img/third-avatar.png" alt="Photo of Lauro B. Matos">
                         <div class="profile-content">
-                            <h4>Lauro B. Matos</h4>
+                            <h3>Lauro B. Matos</h3>
                         </div>
-                        <div class="rating">
-                            <span class="star">★</span>
-                            <span class="star">★</span>
-                            <span class="star">★</span>
-                            <span class="star">★</span>
-                            <span class="star">★</span>
+                        <div class="rating" role="img" aria-label="5 out of 5 stars">
+                            <span class="star" aria-hidden="true">★</span>
+                            <span class="star" aria-hidden="true">★</span>
+                            <span class="star" aria-hidden="true">★</span>
+                            <span class="star" aria-hidden="true">★</span>
+                            <span class="star" aria-hidden="true">★</span>
                         </div>
                     </footer>
                 </article>
             </div>
         </section>
-        <section class="hero-bottom">
+        <div class="hero-bottom">
             <div class="hero-img"></div>
-        </section>
+        </div>
     </main>
     <footer class="main-footer">
         <div class="footer-content">
-            <img src="img/logo-jornada-footer.png" alt="">
-            <p>Horário de atendimento: 08h - 20h (Segunda a Sábado)</p>
-            <p>Desenvolvido por Alura. Projeto fictício sem fins comerciais.</p>
+            <img src="/img/logo-jornada-footer.png" alt="Jornada Viagens logo">
+            <p>Business hours: 8 AM – 8 PM (Monday to Saturday)</p>
+            <p>Developed by Alura. Fictional project with no commercial purpose.</p>
         </div>
         <div class="footer-social">
-            <p>Acesse nossas redes:</p>
+            <p>Follow us on social media:</p>
 
-            <a href="#" target="_blank" title="Acesse nosso whatsapp">
-                <img src="img/logo-whatsapp.png" alt="">
+            <a href="#" target="_blank" title="Visit our WhatsApp">
+                <img src="/img/logo-whatsapp.png" alt="WhatsApp">
             </a>
 
-            <a href="#" target="_blank" title="acesse o nosso instagram">
-                <img src="img/logo-instagram.png" alt="">
+            <a href="#" target="_blank" title="Visit our Instagram">
+                <img src="/img/logo-instagram.png" alt="Instagram">
             </a>
 
-            <a href="#" target="_blank" title="acesso o nosso twitter">
-                <img src="img/logo-twitter.png" alt="">
+            <a href="#" target="_blank" title="Visit our Twitter">
+                <img src="/img/logo-twitter.png" alt="Twitter">
             </a>
         </div>
     </footer>
